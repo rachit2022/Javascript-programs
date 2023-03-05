@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            background-color: red;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quas ullam eum nulla velit
+            fuga ipsam
+            laudantium itaque dicta eaque inventore quisquam unde, perspiciatis delectus commodi molestiae ducimus autem
+            ad quasi error corporis quos. Optio enim sint, ullam veniam ab hic itaque dignissimos deleniti officia
+            debitis assumenda recusandae omnis blanditiis harum corporis saepe architecto laborum sit, nihil nam
+            repellendus voluptatem laboriosam sunt? Aspernatur fugit perferendis vel. Quia accusantium temporibus quis,
+            nihil minima perspiciatis iure quae explicabo. Repellat fuga, asperiores id consectetur corporis dicta
+            expedita nulla repellendus hic quod, molestias aliquam distinctio porro similique possimus? Dolorem
+            accusantium sequi earum molestias aspernatur architecto quod et autem. Aspernatur nostrum laudantium, error
+            blanditiis tenetur odio similique excepturi nobis aliquam doloribus consequatur nemo iste vel dignissimos,
+            reiciendis explicabo corporis, vitae ratione adipisci rerum voluptatem tempora! Nobis ducimus et autem at,
+            dolore voluptas harum ipsam quia reprehenderit, molestiae cumque natus tenetur fuga consequuntur fugiat
+            nesciunt dolorum deserunt delectus, doloribus praesentium. Suscipit dolore, aliquid illum recusandae
+            repudiandae eius at quasi, eum voluptates consequatur voluptas quaerat modi praesentium quibusdam
+            perspiciatis. Minus itaque veniam nihil iure earum eligendi fugit doloremque pariatur natus commodi fuga
+            expedita velit facere assumenda labore quia, ipsum consequatur dolores porro temporibus ratione rerum quas
+            minima. Temporibus accusantium tenetur, sit nostrum assumenda aliquam culpa consequuntur ad perferendis,
+            quam iusto animi modi blanditiis deserunt omnis maxime quod quia fuga facilis natus aliquid quos. In, fugit!
+            Quasi atque aspernatur voluptas distinctio soluta iste dolorem molestias illo molestiae corrupti, debitis
+            dicta ea? Eveniet labore maiores nihil, incidunt placeat molestiae? Deleniti dignissimos nesciunt aut alias,
+            maiores aliquid nobis aperiam ab repellat eum, unde consectetur, asperiores dolor perspiciatis quia
+            molestias in? Eveniet, maiores praesentium ratione quia doloribus dolores deserunt nisi vel illum, ullam
+            officia iste corporis. Ab dignissimos delectus sit accusamus soluta eaque amet possimus quas. Odio,
+            voluptate quasi deleniti odit asperiores delectus magni consectetur vitae! Nulla totam soluta fuga
+            consequatur tempora, debitis hic eius, sed iure ab odio beatae perferendis doloremque nemo minus? Hic
+            voluptatibus quam a perferendis voluptatum dolores maxime, officiis corporis! Quisquam quis minima
+            accusantium necessitatibus. Esse modi animi ullam ex dicta molestiae incidunt laborum iure perspiciatis
+            nesciunt hic ducimus, consectetur qui libero architecto minima culpa quis porro quas earum. Consequuntur
+            repellat eius itaque quam accusamus quos voluptatem similique velit veniam nulla, alias laboriosam laborum,
+            quasi harum? Odit eaque natus nemo dignissimos error soluta, fugiat, aperiam, doloribus aliquid voluptatibus
+            minus optio porro culpa! Perspiciatis soluta eius tenetur maiores eligendi nulla necessitatibus libero unde
+            itaque architecto illo, odio omnis animi ea ad, sed, id alias nostrum? Distinctio ex placeat a fugiat labore
+            vero, ut reiciendis aut laborum consectetur sit quas atque ullam illum ipsa vel. Dolore, enim magnam?
+            Voluptatibus amet aliquam minima dolorum esse. Assumenda praesentium quis asperiores quos perferendis,
+            exercitationem non. Non quibusdam possimus reprehenderit esse dicta facilis deleniti quis repellat debitis
+            ipsa cumque molestiae veniam odio architecto ea exercitationem nihil ab, asperiores maiores et nobis
+            laudantium est neque. Itaque, rem ipsum? Id neque perspiciatis vel tempore consequuntur nam amet aperiam
+            repellat deserunt aspernatur, reiciendis veritatis, animi corporis.</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert("Mouse Inside");
+        });
+        para.addEventListener('mouseout', function run() {
+            alert("Mouse Outside");
+        });
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
